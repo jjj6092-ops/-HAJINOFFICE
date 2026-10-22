@@ -93,6 +93,7 @@ function home(){return `<div id="home-site">
  ['03','◷','분석 대시보드','흩어진 데이터에서 인사이트를 발견합니다. 핵심 지표로 다음 결정을 준비하세요.','analytics','DATA & INSIGHTS'],
  ['04','▣','프로젝트 추적기','아이디어에서 완성까지 함께합니다. 진행 상황과 담당 업무를 명확하게 관리하세요.','projects','PROJECT & COLLABORATION'],
  ['05','⌁','영업 파이프라인','새로운 만남을 성장의 기회로. 고객과의 첫 연결부터 계약까지 이어갑니다.','deals','SALES & RELATIONSHIPS'],
+ ['08','▤','재고 관리','이카운트 ERP의 품목·창고별 재고를 조회합니다. 서버 연동 설정 후 사용할 수 있습니다.','inventory','INVENTORY & ECOUNT'],
  ['06','⚒','AS 관리','기존 하진 AS 시스템으로 연결합니다. AS 업무는 연결된 시스템에서 계속 관리합니다.','as','AFTER-SALES SERVICE'],
  ['07','◫','종합 대시보드','회사의 흐름을 한눈에 파악합니다. 오늘 집중해야 할 업무를 빠르게 확인하세요.','overview','ALL-IN-ONE WORKSPACE']
  ].map(([n,icon,title,desc,route,en])=>`<a class="service-card ${route==='as'?'as-service-card':''}" href="${route==='as'?AS_URL:OFFICE_URL+'#'+route}" ${route==='as'?'target="_blank" rel="noopener noreferrer" aria-label="AS 관리 (새 탭)"':''}><div class="service-top"><span>${icon}</span><small>${n}</small></div><h3>${title}</h3><p>${desc}</p><div class="service-bottom"><span>${en}</span><b>↗</b></div></a>`).join('')}</div></section>
